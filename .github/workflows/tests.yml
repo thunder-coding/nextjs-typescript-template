@@ -27,3 +27,9 @@ jobs:
 
     - name: Build
       run: npm run build
+
+    - name: Start dev server before running tests
+      run: npm run dev &
+
+    - name: Run e2e tests using Cypress
+      uses: cypress-io/github-action@v2
