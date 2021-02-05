@@ -5,3 +5,6 @@ script:
   - "echo ******Installing dependencies******"
   - "npm install"
   - "npm run build"
+  - "npm run dev &"
+  - "npx cypress run"
+  - "kill $(jobs -p) || true"
