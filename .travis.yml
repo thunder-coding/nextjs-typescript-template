@@ -6,5 +6,7 @@ script:
   - "npm install"
   - "npm run build"
   - "npm run dev &"
+  - "npm run prettier-check"
   - "npx cypress run"
   - "kill $(jobs -p) || true"
+

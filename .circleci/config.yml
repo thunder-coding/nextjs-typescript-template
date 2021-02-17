@@ -32,6 +32,7 @@ jobs:
       # - run:
       #     name: Run  tests
       # setup_remote_docker   command: npm test
+      - run: npm run prettier-check
 
 workflows:
   # Below is the definition of your workflow.

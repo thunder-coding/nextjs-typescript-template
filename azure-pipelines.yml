@@ -20,6 +20,9 @@ steps:
     npm run build
   displayName: 'npm install and build'
 
+- script: npm run prettier-check
+  displayName: 'Run prettier checks'
+
 - script: |
    npm run dev &
    npx cypress run
