@@ -28,8 +28,12 @@ jobs:
     - name: Build
       run: npm run build
 
+    - name: Run Prettier tests
+      run: npm run prettier-check
+
     - name: Run e2e tests using Cypress
       uses: cypress-io/github-action@v2
       with:
         start: npm run dev
         wait-on: 'http://localhost:3000'
+
