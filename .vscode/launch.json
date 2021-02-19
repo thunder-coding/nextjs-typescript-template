@@ -1,19 +1,19 @@
 {
 	"configurations": [
-    {
-      "type": "firefox",
-      "request": "launch",
-      "reAttach": true,
-      "name": "Launch Firefox",
-      "url": "http://localhost:3000",
-      "webRoot": "${workspaceFolder}"
-    },
-    {
-      "command": "yarn dev",
-      "name": "Start the dev server",
-      "request": "launch",
-      "type": "node-terminal"
-    },
+		{
+			"command": "npm run dev",
+			"name": "Start the dev server",
+			"request": "launch",
+			"type": "node-terminal"
+		},
+		{
+			"type": "firefox",
+			"request": "launch",
+			"reAttach": true,
+			"name": "Launch Firefox",
+			"url": "http://localhost:3000",
+			"webRoot": "${workspaceFolder}"
+		},
 		{
 			"name": "Launch Edge",
 			"request": "launch",
